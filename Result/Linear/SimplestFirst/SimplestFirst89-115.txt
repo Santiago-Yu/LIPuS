@@ -1,0 +1,30 @@
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+0.32128238677978516	-1*y <= -2
+0.29225707054138184	-1*y <= -2
+None	None
+None	None
+None	None
+None	None
+6.63039231300354	1*x <= 100
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+None	None
+1.1076693534851074	And(Or(-1*x <= -1, -1*sn <= 0),
+    Or(0*sn <= -1, 1*sn + -1*x <= 0),
+    Or(-1*sn + 1*x <= 0, 1*x <= 0))
+1.8105919361114502	And(Or(0*x <= 0, 0*sn <= 0),
+    Or(-1*sn + 1*x <= 0, 0*sn <= -1),
+    Or(0*x <= -1, 1*sn + -1*x <= 0))

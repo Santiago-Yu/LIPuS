@@ -1,0 +1,5 @@
+S ::= ( C ) | ( C && C ) | ( C && C && C )
+C ::= ( p ) | ( p "||" p ) | ( p "||" p "||" p )
+p ::= expr cmp const
+expr ::= ( const * var ) | ( const * var ) + expr
+cmp ::= < | == 
