@@ -56,6 +56,7 @@ class PT_generator:
 
 
 
+
     def generate_next(self, CE):
         self.depth = 0
         PT = InitPT()
@@ -197,7 +198,7 @@ class PT_generator:
         # if torch.cuda.is_available():
         #     loss = loss.cuda()
         self.adam.zero_grad()
-        print(loss)
+        #print(loss)
         loss.backward()
         # if torch.cuda.is_available():
         #     loss = loss.cpu()

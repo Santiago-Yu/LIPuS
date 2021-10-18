@@ -14,7 +14,7 @@ class Config:
     LinearPrograms = ["Problem_L" + str(i) for i in range(1,134)]
     NonLinearPrograms = ["Problem_NL" + str(i) for i in range(1,31)]
 
-    LearningRate = 1e-7
+    LearningRate = 1e-6
 
 config = Config()
 

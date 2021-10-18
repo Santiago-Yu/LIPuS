@@ -1,4 +1,4 @@
-dir_guard = mkdir -p $(@D)
+dir_guard = @mkdir -p $(@D)
 FIND := find
 CXX := g++
 
@@ -9,7 +9,7 @@ include_dirs = ./include
 
 CXXFLAGS += $(addprefix -I,$(include_dirs)) -Wno-unused-local-typedef
 CXXFLAGS += -fPIC
-cpp_files = $(shell $(FIND) src/lib -name "*.cpp" -print | cut -d"/" -f3)
+cpp_files = $(shell $(FIND) src/lib -name "*.cpp" -print | rev | cut -d"/" -f1 | rev)
 cxx_obj_files = $(subst .cpp,.o,$(cpp_files))
 
 objs = $(addprefix build/lib/,$(cxx_obj_files))
